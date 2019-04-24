@@ -12,12 +12,12 @@ app.use(express.static(path.join(__dirname, '..','public')));
 /*route handlers*/
 app.get('/', home);
 
-app.set('view', path.join(__dirname,'views'));
+app.set('views', path.join(__dirname,'views'));
 app.set('view engine','hbs');
 
 app.engine(
     'hbs', 
-    handelbars({
+    handlebars({
         extname:'hbs',
         layoutsDir:path.join(__dirname,'views','layouts'),
         partialsDir:path.join(__dirname,'views','partials'),
