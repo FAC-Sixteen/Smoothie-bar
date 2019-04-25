@@ -18,7 +18,7 @@ EOF`,
     } else {
       console.log("Created database smoothietest");
     }
-    runDbBuild
+    runDbBuild()
       .then(() => {
         console.log("Successfully populated test database");
         process.exit(0); //wtf am i

@@ -14,12 +14,13 @@ VALUES ('Kate', 'Purple Rain'),('Burhan','Mad Mango'),('Ryan','FAC Fruitie'),('S
 COMMIT;
 `;
 
-const runDbBuild = new Promise((resolve, reject) => {
-  dbConnection.query(sql, (err, res) => {
-    if (err) reject(err);
-    console.log("database being built");
-    resolve(true);
+const runDbBuild = () =>
+  new Promise((resolve, reject) => {
+    dbConnection.query(sql, (err, res) => {
+      if (err) reject(err);
+      console.log("database being built");
+      resolve(true);
+    });
   });
-});
 
 module.exports = runDbBuild;
