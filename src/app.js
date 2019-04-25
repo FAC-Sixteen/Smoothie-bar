@@ -12,14 +12,12 @@ const app = express();
 app.set("port", process.env.PORT || 7000);
 app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 /*route handlers*/
 app.get("/", home);
 app.post("/order", order);
 
-app.get('*', error);
-
-
+app.get("*", error);
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
