@@ -1,4 +1,15 @@
+<h2>Your Order</h2>
+{{#if recentOrder}}
+<p>Hey {{ recentOrder.name }}</p>
+ <p>Order No: {{ recentOrder.id }}</p>
+<p>Your smoothie is: {{ recentOrder.smoothie_name }}</p>
+{{/if}}
 
-<p>order No: {{ id }}</p>
-<p>Hey {{ name }}</p>
-<p>Your smoothie is {{ smoothie_name }}</p>
+
+    <h2>Your Order History</h2>
+{{#each orders}}
+<ul>
+ <li>order No: {{ id }}</li>
+<li>Your smoothie is: {{ smoothie_name }}</li>
+</ul>
+{{/each}}

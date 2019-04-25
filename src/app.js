@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
 /*route handlers*/
 app.get("/", home);
-app.post("/order", order);
+app.post("/order", order.orderHistory);
 
 app.get('*', error);
 

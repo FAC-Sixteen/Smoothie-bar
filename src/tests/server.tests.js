@@ -5,7 +5,6 @@ const app = require('../app');
 
 
 test('tape is working', t => {
-
     t.pass();
     t.end();
 });
@@ -17,11 +16,9 @@ test('testing if / endpoint has a status code 200', t => {
         .expect('content-type', /text/)
         .end((err, res) => {
             t.error(err);
-            // console.log(res)
             t.end();
         });
 });
-
 
 test('testing if random endpoint has a status code 404', t => {
     request(app)
@@ -30,9 +27,7 @@ test('testing if random endpoint has a status code 404', t => {
         .expect('content-type', /text/)
         .end((err, res) => {
             t.error(err);
-                        t.equals(res.status, 404, 'throws 404 with a random endpoint');
-
-            // console.log(res)
+            t.equals(res.status, 404, 'throws 404 with a random endpoint');
             t.end();
         });
 });
