@@ -2,7 +2,12 @@ const { Pool } = require("pg");
 const url = require("url");
 require("env2")("./config.env");
 
-let connectionString = process.env.DATABASE_URL;
+let connectionString =
+  process.env.NODE_ENV === "test"
+    ? process.env.TEST_DATABASE_URL
+    : process.env.DATABASE_URL;
+
+if (!connectionString) throw new Error("Database url must be set");
 
 // Long version that explicitly sets all the Pool parameters:
 // ---
