@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {{> head }}
-    </head>
+</head>
 
 <body>
+    <div class='content-container'>
 
-    <header>
-        {{> header }}
-    </header>
-
-{{{body}}}
-
-<footer>
-    {{> footer }}
-</footer>
-
+        <header>
+            {{> header }}
+        </header>
+        <main class="main-section">
+            {{{body}}}
+        </main>
+        <footer>
+            {{> footer }}
+        </footer>
+    </div>
 </body>
 
 </html>
