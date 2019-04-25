@@ -1,1 +1,16 @@
 <h2> Hello, can I take your order? </h2>
+
+<form action="/order" method="POST">
+    <label for="customer-name">Name</label>
+    <input id="customer-name" type="text" required>
+
+    <label for="smoothie-order">Smoothie Order</label>
+    <input list="smoothie-options" id="smoothie-order" name="order" required>
+    <datalist id="smoothie-options">
+        <option value="Purple Rain"></option>
+        <option value="Mad Mango"></option>
+        <option value="FAC Fruitie"></option>
+        <option value="Tutti Frutti"></option>
+    </datalist>
+    <button type="submit">Order</button>
+</form>
