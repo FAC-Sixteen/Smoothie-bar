@@ -1,3 +1,9 @@
 language: node_js
 node_js:
   - "10"
+addons:
+  postgresql: "11.2"
+before_script:
+  - psql -U postgres -c 'CREATE DATABASE smoothietest;'
+  - psql -U postgres -c 'CREATE USER smoothietester WITH SUPERUSER PASSWORD 'test';'
+  - psql -U postgres -c 'ALTER DATABASE smoothietest OWNER TO smoothietester;'
