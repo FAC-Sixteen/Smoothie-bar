@@ -20,20 +20,26 @@ TEST_DATABASE_URL = postgres://smoothietester:test@localhost:5432/smoothietest
 
 We sketched out our first ideas out on whiteboards:
 - Initial plan:
+
 ![initial plan](https://files.gitter.im/foundersandcoders/week8-smoothiebar/cBCu/MVIMG_20190424_113412.jpg)
 - Initial layout:
+
 ![initial layout](https://files.gitter.im/foundersandcoders/week8-smoothiebar/cBCu/IMG_20190424_113416.jpg)
 - User/code journey:
+
 ![user/code journey](https://files.gitter.im/foundersandcoders/week8-smoothiebar/cBCu/IMG_20190424_115537.jpg)
 
 
 We then wrote out our entire file structure - along with file purposes and overall themes:
 - File structure:
+
 ![file structure](https://files.gitter.im/foundersandcoders/week8-smoothiebar/cBCu/IMG_20190424_122807.jpg)
 - Controllers structure: 
+
 ![controllers structure](https://files.gitter.im/foundersandcoders/week8-smoothiebar/cBCu/IMG_20190424_123727.jpg)
 
 After our design talk, we drew up a few designs in Figma:
+
 ![mock-up](https://files.gitter.im/foundersandcoders/week8-smoothiebar/62Xl/Screenshot-2019-04-25-at-10.08.14.png)
 
 
@@ -97,7 +103,7 @@ Some features we wanted to see on each page (✨ = level of stretch goal):
 - Used Handlebars to render data on the page
 - we split up for pair coding
 - Wrote tests for the server and the database
-- CSS'd 
+- ✨✨ CSS'd ✨✨
 - we worked on a 404 page
 - we worked rendering all the order history
 
