@@ -1,10 +1,11 @@
-<h2>Hey {{ name }}, here is your order history:</h2>
+<h2>Hey {{ name }}, here's your order history:</h2>
 
 <br>
 <br>
+<ul class="order_history">
 {{#each orders}}
-<ul>
+
     <li>Order No. {{ id }}</li>
-    <li>Your Smoothieis: {{ smoothie_name }}</li>
-</ul>
+    <p>Your smoothie is: <span class="{{ smoothie_name }}">{{ smoothie_name }}</span></p>
 {{/each}}
+</ul>

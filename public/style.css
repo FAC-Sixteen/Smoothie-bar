@@ -4,10 +4,6 @@
   color: hsl(310, 80%, 15%);
 }
 
-a:link {
-  text-decoration: none;
-}
-
 
 body {
   margin: 0;
@@ -21,6 +17,24 @@ body {
   border: 1px solid hsl(359, 67%, 65%);
   border-radius: 0.25em;
   width: 25em;
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav{
+
+  padding-left: 1em;
+}
+
+.nav:link {
+  text-decoration: none;
+}
+
+.nav:hover{
+  text-decoration: underline;
 }
 
 .main-section {
@@ -46,6 +60,7 @@ header h1 {
   display: flex;
   align-items: center;
   color: hsl(310, 80%, 15%);
+margin-bottom: 0.1em;
 }
 
 header {
