@@ -113,9 +113,10 @@ Some features we wanted to see on each page (✨ = level of stretch goal):
 
 ## Issues
 
-- Struggled with a test database on heroku
+- Struggled with a test database on Travis
 - not breaking established tests when experimenting with new features
 - communication so when pair coding so the entire team knows their objectives
+- Travis.org vs Travis.com???
 
 ## Cool stuff we learned
 
