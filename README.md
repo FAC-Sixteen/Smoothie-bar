@@ -8,7 +8,7 @@ A virtual smoothie bar! place your order at https://smoothiebar.herokuapp.com/
 
 - Clone this repo
 - Run `npm i` to install npm dependencies
-- If you like, run `npm buildtest`. This will run a script that builds a test database locally on your machine. You'll need this string for your config.env file:
+- If you like, run `npm run buildtest`. This will run a script that builds a test database locally on your machine. You'll need this string for your config.env file:
 
 ```ba
 TEST_DATABASE_URL = postgres://smoothietester:test@localhost:5432/smoothietest
