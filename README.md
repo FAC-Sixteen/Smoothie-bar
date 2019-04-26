@@ -1,10 +1,12 @@
-# Smoothie Bar
-A virtual smoothie bar!
-[![Build Status](https://travis-ci.org/FAC-Sixteen/Smoothie-bar.svg?branch=master)](https://travis-ci.org/FAC-Sixteen/Smoothie-bar)
+# Smoothie Bar [![Build Status](https://travis-ci.org/FAC-Sixteen/Smoothie-bar.svg?branch=master)](https://travis-ci.org/FAC-Sixteen/Smoothie-bar)
+
+A virtual smoothie bar! place your order at https://smoothiebar.herokuapp.com/
+
 
 > Authors: [Sam](https/github.com/starsuit), [Ryan](https/github.com/RymaTech), [Kate](https/github.com/dubhcait) & [Burhan](https/github.com/Baalwan)
 
-## Set up
+## Local Set up
+
 - Clone this repo
 - Run `npm i` to install npm dependencies
 - If you like, run `npm buildtest`. This will run a script that builds a test database locally on your machine. You'll need this string for your config.env file: 
@@ -15,6 +17,7 @@ TEST_DATABASE_URL = postgres://smoothietester:test@localhost:5432/smoothietest
 - `npm test` will run only the server tests
 
 ## Planning
+
 We sketched out our first ideas out on whiteboards:
 - Initial plan:
 ![initial plan](https://files.gitter.im/foundersandcoders/week8-smoothiebar/cBCu/MVIMG_20190424_113412.jpg)
@@ -35,7 +38,9 @@ After our design talk, we drew up a few designs in Figma:
 
 
 Some features we wanted to see on each page (✨ = level of stretch goal):
+
 ### Order page
+
 - [x] Name
 - [x] Dropdown of smoothies
 - [x] Button - order
@@ -43,6 +48,7 @@ Some features we wanted to see on each page (✨ = level of stretch goal):
 - [ ] Timestamp ✨
 
 ### Personal page - show data
+
 - [x] Name
 - [x] Order history
 - [ ] Favourite smoothie (most ordered) ✨
@@ -51,6 +57,7 @@ Some features we wanted to see on each page (✨ = level of stretch goal):
 
 
 ## To-do
+
 - [x] Set up file structure
 - [x] Installed npm packages
 - [x] Set up server (app.js, index.js)
@@ -68,10 +75,12 @@ Some features we wanted to see on each page (✨ = level of stretch goal):
 
 
 ### To-do stretchies ✨✨
+
 - [ ] Make an API call in the backend for nutrutional info
 
 ## Day 1
 
+- We coded as a team on one laptop
 - We planned and wrote down a detailed file structure - we found writing this out really helped with structuring our code later on
 - We wrote out our core express server files - app.js & index.js
 - Wrote out a very basic handlebars template, added some partials
@@ -79,21 +88,31 @@ Some features we wanted to see on each page (✨ = level of stretch goal):
 - Once we had it up, straight to Heroku!
  ![To Heroku](https://i.imgflip.com/2zcga5.jpg)
 - Wrote the build code for our database, got it running after a few snags
-- Ate chocolate (Kate) 🍫
+- Ate lots of chocolate (Kate) 🍫
 
 
 ## Day 2
+
 - Connected our database up to the app
 - Used Handlebars to render data on the page
+- we split up for pair coding
 - Wrote tests for the server and the database
 - CSS'd 
+- we worked on a 404 page
+- we worked rendering all the order history
+
+## Preview
+![](https://i.imgur.com/uHzEnO8.png)
 
 
 ## Issues
+
 - Struggled with a test database on heroku
-- 
+- not breaking established tests when experimenting with new features
+- communication so when pair coding so the entire team knows their objectives
 
 ## Cool stuff we learned
-- SQL in database build can just be a string - doesn't need to be a separate file
-- The routing in express/handlebars doesn't have to be in a separate file
-- Script to build a whole test database from a js file
+
+- SQL in database build can just be a string - doesn't need to be a separate file (very cool)
+- The routing in express/handlebars doesn't have to be in a separate file (when it is very small)
+- Script to build a whole test database from a js file (very very cool)
