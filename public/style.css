@@ -59,9 +59,28 @@ input {
   border-radius: 0.25em;
 }
 
-/* input[type="radio"] {
-  display: none;
-} */
+input[type="radio"] {
+  /* visually hidden */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+input[type="radio"] ~ label {
+  opacity: 0.5;
+  display: block;
+  transition: transform 0.3s;
+}
+
+input[type="radio"]:checked ~ label {
+  opacity: 1;
+}
+
+input[type="radio"] ~ label:hover {
+  transform: rotate(-10deg);
+}
 
 label {
   font-size: 1.2em;
