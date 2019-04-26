@@ -36,3 +36,14 @@ test('testing if random endpoint has a status code 404', t => {
             t.end();
         });
 });
+
+test('testing if /orderhistory/Burhan has a status 200', t =>{
+    request(app)
+        .get('/orderhistory/Burhan')
+        .expect(200)
+        .end((err, res) => {
+            t.equals(res.status, 200, 'status code is 200')
+            t.true(res.text.includes('Burhan'), 'Burhan should be there')
+            t.end()
+        })
+})
