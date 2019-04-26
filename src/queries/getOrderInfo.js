@@ -7,7 +7,7 @@ const getData = () => {
 
 const getOrderHistory = name => {
   return db
-    .query("SELECT * FROM orders WHERE name = $1", [name])
+    .query("SELECT * FROM orders WHERE UPPER(name) = $1", [name.toUpperCase()])
     .then(response => {
       return response.rows;
     });

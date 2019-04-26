@@ -4,6 +4,7 @@
   color: hsl(310, 80%, 15%);
 }
 
+
 body {
   margin: 0;
   display: flex;
@@ -15,6 +16,25 @@ body {
 .content-container {
   border: 1px solid hsl(359, 67%, 65%);
   border-radius: 0.25em;
+  width: 25em;
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav{
+
+  padding-left: 1em;
+}
+
+.nav:link {
+  text-decoration: none;
+}
+
+.nav:hover{
+  text-decoration: underline;
 }
 
 .main-section {
@@ -40,6 +60,7 @@ header h1 {
   display: flex;
   align-items: center;
   color: hsl(310, 80%, 15%);
+margin-bottom: 0.1em;
 }
 
 header {
@@ -58,7 +79,7 @@ header {
 }
 
 input {
-  border: 2px solid hsl(359, 67%, 65%);
+  border: 1px solid hsl(359, 67%, 65%);
   font-size: 1.2em;
   padding: 0.5em;
   margin-bottom: 1em;
@@ -106,7 +127,7 @@ button {
   color: hsl(310, 80%, 15%);
   padding: 0.5em;
   width: 5em;
-  border: 2px solid hsl(359, 67%, 65%);
+  border: 1px solid hsl(359, 67%, 65%);
   border-radius: 0.25em;
   margin-top: 1em;
   align-self: center;
@@ -115,7 +136,7 @@ button {
 button:hover {
   background-color: hsl(359, 90%, 90%);
   color: hsl(310, 80%, 15%);
-  border: 2px solid hsl(359, 67%, 65%);
+  border: 1px solid hsl(359, 90%, 90%);
 }
 
 h2 {
