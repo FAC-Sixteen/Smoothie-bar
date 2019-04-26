@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 // GET
 app.get("/", home);
-app.get("/orderHistory", orderHistory);
+app.get("/orderHistory/:customerName", orderHistory);
 app.get("*", error);
 
 // POST

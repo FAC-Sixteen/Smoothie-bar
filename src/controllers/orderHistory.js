@@ -1,10 +1,9 @@
 const getOrderInfo = require("../queries/getOrderInfo");
 
 const orderHistory = (req, res) => {
-  const { name, order } = req.body;
-  getOrderInfo.getOrderHistory(name).then(response => {
-    console.log(response);
-    return res.render("orderhistory", { orders: response });
+  const customerName = req.params.customerName;
+  getOrderInfo.getOrderHistory(customerName).then(response => {
+    return res.render("orderhistory", { orders: response, name: customerName });
   });
 };
 
