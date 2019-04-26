@@ -67,7 +67,7 @@ header {
   position: sticky;
 }
 
-.header:hover > .header_smoothie {
+.header:hover .header_smoothie {
   transform: rotate(-10deg);
 }
 
