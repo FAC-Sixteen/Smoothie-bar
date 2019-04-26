@@ -1,0 +1,163 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  border: 1px solid hsl(359, 90%, 70%);
+  border-radius: 0.25em;
+}
+
+.main-section {
+  padding: 2em;
+}
+
+.header_smoothie {
+  width: 80px;
+  object-fit: cover;
+  fill: hsl(359, 90%, 90%);
+  transition: transform 0.5s cubic-bezier(0.44, -1.39, 0.47, 2.67);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  color: hsl(359, 90%, 90%);
+}
+
+header {
+  background-color: hsl(359, 90%, 70%);
+  padding: 1em;
+  position: sticky;
+}
+
+.header:hover > .header_smoothie {
+  transform: rotate(-10deg);
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 1px solid hsl(359, 90%, 70%);
+  font-size: 1.2em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 0.25em;
+}
+
+input[type="radio"] {
+  /* visually hidden */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+input[type="radio"] ~ label {
+  opacity: 0.5;
+  display: block;
+  transition: transform 0.3s;
+}
+
+input[type="radio"]:checked ~ label {
+  opacity: 1;
+}
+
+input[type="radio"] ~ label:hover {
+  transform: rotate(-10deg);
+}
+
+label {
+  font-size: 1.2em;
+  padding: 0.5em;
+  padding-left: 0;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: hsl(359, 90%, 70%);
+  color: hsl(359, 90%, 90%);
+  padding: 0.5em;
+  width: 5em;
+  border: 1px solid hsl(359, 90%, 90%);
+  border-radius: 0.25em;
+}
+
+button:hover {
+  background-color: hsl(359, 90%, 95%);
+  color: hsl(359, 90%, 70%);
+  border: 1px solid;
+}
+
+h2 {
+  font-size: 2.25em;
+  color: hsl(359, 90%, 70%);
+}
+
+footer {
+  padding-top: 1em;
+}
+
+.footer-text {
+  margin: 0;
+  padding: 0.25em;
+  color: hsl(359, 90%, 70%);
+  font-weight: 400;
+  text-align: center;
+}
+
+.blue-smoothie {
+  --hue: 250;
+}
+
+.green-smoothie {
+  --hue: 80;
+}
+
+.yellow-smoothie {
+  --hue: 60;
+}
+
+.orange-smoothie {
+  --hue: 20;
+}
+
+.pink-smoothie {
+  --hue: 340;
+}
+
+.main-color {
+  fill: hsl(var(--hue), 90%, 70%);
+}
+
+.shadow-color {
+  fill: hsl(var(--hue), 60%, 50%);
+}
+
+.smoothie-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}

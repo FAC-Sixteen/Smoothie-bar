@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test node ./src/tests/*.tests.js | tap-spec",
+    "test": "NODE_ENV=test node ./src/tests/server.tests.js | tap-spec",
+    "fulltest": "NODE_ENV=test node ./src/tests/*.tests.js | tap-spec",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "buildtest": "NODE_ENV=test node src/model/setup_test_db.js"
