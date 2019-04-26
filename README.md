@@ -113,14 +113,15 @@ Some features we wanted to see on each page (✨ = level of stretch goal):
 ![](https://i.imgur.com/uHzEnO8.png)
 
 ## Issues
-
+- Understanding MVC architecture
 - Struggled with a test database on Travis
 - not breaking established tests when experimenting with new features
 - communication so when pair coding so the entire team knows their objectives
 - Travis.org vs Travis.com???
 
 ## Cool stuff we learned
-
+- more practice with writin server tests with supertest
+- Serving and creating pages from the backend (express / handlebars)
 - SQL in database build can just be a string - doesn't need to be a separate file (very cool)
 - The routing in express/handlebars doesn't have to be in a separate file (when it is very small)
 - Script to build a whole test database from a js file (very very cool)
