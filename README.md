@@ -110,7 +110,8 @@ Some features we wanted to see on each page (✨ = level of stretch goal):
 
 ## Preview
 
-![](https://i.imgur.com/uHzEnO8.png)
+![](https://i.imgur.com/G2cx6xm.png)
+
 
 ## Issues
 - Understanding MVC architecture
