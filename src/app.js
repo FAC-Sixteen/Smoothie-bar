@@ -6,20 +6,23 @@ const bodyParser = require("body-parser");
 const home = require("./controllers/home");
 const order = require("./controllers/order");
 const error = require("./controllers/error");
+const orderHistory = require("./controllers/orderHistory");
 
 const app = express();
 
 app.set("port", process.env.PORT || 7000);
 app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 /*route handlers*/
+
+// GET
 app.get("/", home);
+app.get("/orderHistory", orderHistory);
+app.get("*", error);
+
+// POST
 app.post("/order", order);
-
-app.get('*', error);
-
-
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");

@@ -1,0 +1,10 @@
+<h2>Hey {{ name }}, Here is your order history:</h2>
+
+<br>
+<br>
+{{#each orders}}
+<ul>
+    <li>Order No. {{ id }}</li>
+    <li>Your Smoothieis: {{ smoothie_name }}</li>
+</ul>
+{{/each}}
