@@ -124,3 +124,4 @@ Some features we wanted to see on each page (✨ = level of stretch goal):
 - SQL in database build can just be a string - doesn't need to be a separate file (very cool)
 - The routing in express/handlebars doesn't have to be in a separate file (when it is very small)
 - Script to build a whole test database from a js file (very very cool)
+- Putting our messy SVGs in partials - thanks spottedgulls!
