@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const home = require("./controllers/home");
 const order = require("./controllers/order");
 const error = require("./controllers/error");
+const orderHistory = require("./controllers/orderHistory");
 
 const app = express();
 
@@ -14,10 +15,14 @@ app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 /*route handlers*/
-app.get("/", home);
-app.post("/order", order);
 
+// GET
+app.get("/", home);
+app.get("/orderHistory/:customerName", orderHistory);
 app.get("*", error);
+
+// POST
+app.post("/order", order);
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
